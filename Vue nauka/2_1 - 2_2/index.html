@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue test</title>
+</head>
+<body>
+<div id="app">
+    <h5>New name:</h5>
+    <input type="text" v-bind:value="firstName" v-on:input="changeName"/>
+    <h1 v-bind:style="h1Style">Hello {{firstName}} {{lastName}}!</h1>
+    <h1>Hello {{firstName + ' ' + lastName}}!</h1>
+    <h5>{{upperFirstName()}}</h5>
+    <h5>{{dodajLiczby()}}</h5>
+    <button v-on:click="changeColor">Zmień kolor</button>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+
+</div>
+</body>
+</html>
